@@ -13,16 +13,10 @@ export const authSlice = createSlice({
   initialState,
 
   reducers: {
-    setLoginSuccess: (
-      state: ResponseAuthType,
-      action: PayloadAction<boolean>,
-    ) => {
+    setLoginSuccess: (state: ResponseAuthType) => {
       state.isAuthenticated = true;
     },
-    setLogoutSuccess: (
-      state: ResponseAuthType,
-      action: PayloadAction<boolean>,
-    ) => {
+    setLogoutSuccess: (state: ResponseAuthType) => {
       state.isAuthenticated = false;
     },
   },

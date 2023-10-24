@@ -27,13 +27,16 @@ export const Pagination: FC<PaginationProps> = ({
                 key={index}
                 text={pageNumber}
                 disabled={pageNumber === currentPage}
-                className={clsx(currentPage === pageNumber ? "shadow-sm" : "")}
+                className={clsx(
+                  currentPage === pageNumber ? "shadow-sm" : "",
+                  "w-[42px]",
+                )}
                 onClick={() =>
                   router.push(`/table?page=${pageNumber}`).finally()
                 }
               />
             ) : (
-              <div className=" p-2 block text-center cursor-default text-base">
+              <div className=" p-2 block text-center cursor-default text-base w-[42px]">
                 {pageNumber}
               </div>
             )}

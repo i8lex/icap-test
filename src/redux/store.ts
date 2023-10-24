@@ -1,6 +1,5 @@
 import {
   persistStore,
-  persistReducer,
   FLUSH,
   PAUSE,
   PERSIST,

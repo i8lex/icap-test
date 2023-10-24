@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Table, User } from "@/types";
+import { Table } from "@/types";
 
 const initialState: Table = {
   count: 0,

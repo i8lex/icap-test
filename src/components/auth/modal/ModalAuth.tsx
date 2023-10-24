@@ -5,7 +5,6 @@ import AlertIcon from "../../../../public/IconsSet/exclamation.svg";
 
 type ModalAuthProps = {
   className?: string;
-  email?: string;
   open: boolean;
   handleClose: () => void;
   confirmed?: boolean;
@@ -13,7 +12,6 @@ type ModalAuthProps = {
 };
 
 export const ModalAuth: FC<ModalAuthProps> = ({
-  email,
   open,
   handleClose,
   message,

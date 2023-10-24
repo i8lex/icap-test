@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import * as process from "process";
 import { LoginRequest, LoginResponse } from "@/types";
 import { URI } from "@/constants";
 
