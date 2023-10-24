@@ -7,13 +7,12 @@ export const getPaginationData = (
   const items: (number | "...")[] = [];
 
   if (currentPageNumber === 1 && pageCount === 1) {
-    const res = {
+    return {
       current: currentPageNumber,
       prev: null,
       next: null,
       items: [1],
     };
-    return res;
   }
 
   items.push(1);
@@ -37,11 +36,10 @@ export const getPaginationData = (
     items.push(pageCount);
   }
 
-  const res = {
+  return {
     current: currentPageNumber,
     prev: prev,
     next: next,
     items: items,
   };
-  return res;
 };

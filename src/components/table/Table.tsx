@@ -1,5 +1,5 @@
 import { User } from "@/types";
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { UserCard } from "@/components/table/UserCard";
 
 type TableProps = {

@@ -38,7 +38,7 @@ const TablePage = () => {
     if (!isAuthenticated) {
       router.push("/login");
     }
-  }, []);
+  }, [isAuthenticated, router]);
   return (
     <GeneralLayout currentPage={"table"}>
       <div className="flex flex-col gap-8   tablet:gap-6 items-end">

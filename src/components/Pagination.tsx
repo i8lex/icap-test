@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React, { FC } from "react";
 import clsx from "clsx";
 import { getPaginationData } from "@/utils/paginationUtils";
