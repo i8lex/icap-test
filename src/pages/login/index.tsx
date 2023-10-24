@@ -51,7 +51,7 @@ const LoginPage: FC = () => {
       setOpenModal(true);
       setTimeout(() => {
         setOpenModal(false);
-        dispatch(setLoginSuccess(true));
+        dispatch(setLoginSuccess());
         router.push("/table?page=1");
       }, 3000);
     }

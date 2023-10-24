@@ -53,7 +53,7 @@ export const GeneralHeader: FC<GeneralHeaderProps> = ({ currentPage }) => {
       <div className="flex items-center gap-4">
         <button
           onClick={() => {
-            dispatch(setLogoutSuccess(false));
+            dispatch(setLogoutSuccess());
             router.push("/login").finally();
           }}
           className="solid h-7 w-7 flex flex-col items-center bg-white shadow-md shadow-dark-60 hover:shadow-sm hover:shadow-dark-60 hover:bg-softGreen justify-center overflow-hidden rounded-full border border-stroke focus:border-green-80 focus:outline-none focus:ring-2 focus:ring-green-80 tablet:h-8 tablet:w-8"
